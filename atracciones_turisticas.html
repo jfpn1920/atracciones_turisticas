@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atracciones turisticas</title>
+    <link rel="stylesheet" href="atracciones_turisticas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="atracciones_turisticas.js" defer></script>
+</head>
+<body>
+    <!------------------------------------------->
+    <!--|estructuracion_atracciones_turisticas|-->
+    <!------------------------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <div class="icono_intro">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+                <h2>Lugares para conocer</h2>
+                <p>Explora tres destinos y personaliza su información.</p>
+            </div>
+        </section>
+        <!------------------------->
+        <!--|tarjetas_turisticas|-->
+        <!------------------------->
+        <section class="lugares">
+            <article class="lugar" data-id="1">
+                <div class="imagen_lugar">
+                    <img class="imagen" src="" alt="Lugar turístico">
+                    <span class="numero">01</span>
+                </div>
+                <div class="contenido_lugar">
+                    <i class="fa-solid fa-landmark icono_lugar"></i>
+                    <label>Nombre del lugar</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Ubicación</label>
+                    <input type="text" class="campo_ubicacion">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <label>Imagen</label>
+                    <input type="text" class="campo_imagen">
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_lugar"></p>
+                </div>
+            </article>
+            <article class="lugar" data-id="2">
+                <div class="imagen_lugar">
+                    <img class="imagen" src="" alt="Lugar turístico">
+                    <span class="numero">02</span>
+                </div>
+                <div class="contenido_lugar">
+                    <i class="fa-solid fa-landmark icono_lugar"></i>
+                    <label>Nombre del lugar</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Ubicación</label>
+                    <input type="text" class="campo_ubicacion">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <label>Imagen</label>
+                    <input type="text" class="campo_imagen">
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_lugar"></p>
+                </div>
+            </article>
+            <article class="lugar" data-id="3">
+                <div class="imagen_lugar">
+                    <img class="imagen" src="" alt="Lugar turístico">
+                    <span class="numero">03</span>
+                </div>
+                <div class="contenido_lugar">
+                    <i class="fa-solid fa-landmark icono_lugar"></i>
+                    <label>Nombre del lugar</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Ubicación</label>
+                    <input type="text" class="campo_ubicacion">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                    <label>Imagen</label>
+                    <input type="text" class="campo_imagen">
+                    <div class="botones">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_lugar"></p>
+                </div>
+            </article>
+        </section>
+        <!-------------------------------->
+        <!--|accionar_restablecer_todos|-->
+        <!-------------------------------->
+        <section class="acciones">
+            <button id="boton_restablecer"><i class="fa-solid fa-trash"></i>Restablecer todos</button>
+            <p id="mensaje_general"></p>
+        </section>
+    </main>
+</body>
+</html>

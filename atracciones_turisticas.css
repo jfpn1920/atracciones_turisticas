@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #edf4f1;
+    color: #25352f;
+    min-height: 100vh;
+}
+/*-----------------------------------*/
+/*--|estilo_atracciones_turisticas|--*/
+/*-----------------------------------*/
+.encabezado {
+    background: #17483f;
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icono_encabezado {
+    width: 68px;
+    height: 68px;
+    background: #d9b45c;
+    color: #17483f;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+}
+.etiqueta {
+    color: #e7cb7f;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.encabezado h1 {
+    font-size: 30px;
+    margin: 7px 0;
+}
+.encabezado p {
+    color: #c8d9d4;
+    font-size: 14px;
+}
+.contenedor {
+    width: 90%;
+    max-width: 1180px;
+    margin: 35px auto;
+}
+.introduccion {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 28px;
+    box-shadow: 0 5px 15px #0000000d;
+}
+.icono_intro {
+    width: 48px;
+    height: 48px;
+    background: #e8f0ed;
+    color: #267264;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+.introduccion h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.introduccion p {
+    color: #71817b;
+    font-size: 14px;
+}
+/*--------------------------------*/
+/*--|estilo_tarjetas_turisticas|--*/
+/*--------------------------------*/
+.lugares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.lugar {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px #0000000d;
+}
+.imagen_lugar {
+    height: 185px;
+    position: relative;
+    background: #dce8e4;
+}
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.numero {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    background: #17483f;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.contenido_lugar {
+    padding: 20px;
+}
+.icono_lugar {
+    color: #c39d45;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.contenido_lugar label {
+    display: block;
+    color: #687871;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.contenido_lugar input, .contenido_lugar textarea {
+    width: 100%;
+    border: 1px solid #d9e1de;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 13px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+.contenido_lugar input:focus, .contenido_lugar textarea:focus {
+    border-color: #3a8878;
+}
+.contenido_lugar textarea {
+    height: 70px;
+    resize: vertical;
+}
+.botones {
+    display: flex;
+    gap: 6px;
+}
+.boton_guardar, .boton_restaurar {
+    border: none;
+    padding: 10px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton_guardar {
+    background: #17483f;
+    color: white;
+}
+.boton_guardar:hover {
+    background: #226255;
+}
+.boton_restaurar {
+    background: #edf1ef;
+    color: #45534e;
+}
+.boton_restaurar:hover {
+    background: #dfe6e2;
+}
+.boton_guardar i, .boton_restaurar i {
+    margin-right: 4px;
+}
+.mensaje_lugar {
+    min-height: 17px;
+    color: #31805b;
+    font-size: 12px;
+    margin-top: 9px;
+}
+/*---------------------------------------*/
+/*--|estilo_accionar_restablecer_todos|--*/
+/*---------------------------------------*/
+.acciones {
+    text-align: center;
+    margin-top: 28px;
+}
+#boton_restablecer {
+    border: none;
+    background: #c94c47;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#boton_restablecer:hover {
+    background: #ad3c38;
+}
+#boton_restablecer i {
+    margin-right: 6px;
+}
+#mensaje_general {
+    margin-top: 12px;
+    color: #66766f;
+    font-size: 14px;
+}
